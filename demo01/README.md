@@ -9,4 +9,4 @@ AuthenticationManager()的默认实现用于尝试获取AuthenticationManager，
 此方法需要被重写，默认配置为：  
    http.authorizeRequests().anyRequest().authenticated().and().formLogin().and().httpBasic();
 3. configure(WebSecurity web)  
-此方法需要被重写，如果不需要url控制权限的话，就可以用这个。
+此方法需要被重写，如果不需要url控制权限的话，就可以采用该方法。
