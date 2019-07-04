@@ -26,7 +26,7 @@
         <javaModelGenerator targetPackage="com.study.demo.pojo" targetProject="src/main/java"/>
         <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources/mybatis"/>
         <javaClientGenerator type="XMLMAPPER" targetPackage="com.study.demo.dao" targetProject="src/main/java"/>
-        <table tableName="user" mapperName="UserDao" domainObjectName="User" enableDeleteByExample="false"
+        <table tableName="account" mapperName="AccountDao" domainObjectName="Account" enableDeleteByExample="false"
                enableUpdateByExample="false"
                enableSelectByExample="false"
                enableCountByExample="false"
