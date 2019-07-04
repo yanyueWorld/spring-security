@@ -4,6 +4,7 @@ import com.study.demo.pojo.Role;
 
 import java.util.List;
 
+@Mapper
 public interface RoleDao {
     int deleteByPrimaryKey(Integer id);
 
