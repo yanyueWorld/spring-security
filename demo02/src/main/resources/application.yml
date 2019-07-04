@@ -1,0 +1,32 @@
+server:
+  port: 80
+  servlet:
+    context-path: /
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/spring-security?serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    serialization:
+      FAIL_ON_EMPTY_BEANS: true
+  devtools:
+    restart:
+      enabled: true
+  thymeleaf:
+    cache: false
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  configuration:
+    aggressive-lazy-loading: false
+    cache-enabled: true
+    lazy-loading-enabled: true
+    map-underscore-to-camel-case: true
+    use-generated-keys: true
+logging:
+  level:
+    com.study.demo.dao: debug
