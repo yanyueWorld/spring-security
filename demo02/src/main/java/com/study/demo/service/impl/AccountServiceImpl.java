@@ -18,6 +18,7 @@ public class AccountServiceImpl implements AccountService {
 
     @Resource
     private AccountDao accountDao;
+
     @Override
     public Account getUserByUsername(String username) {
         if(username==null||username.length()==0){

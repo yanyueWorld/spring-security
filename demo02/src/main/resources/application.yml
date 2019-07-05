@@ -1,24 +1,30 @@
+#全局配置
 server:
   port: 80
   servlet:
     context-path: /
 spring:
+  #数据源配置
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/spring-security?serverTimezone=Asia/Shanghai
     username: root
     password: root
     type: com.alibaba.druid.pool.DruidDataSource
+  #jackson配置
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
     serialization:
       FAIL_ON_EMPTY_BEANS: true
+  #热部署
   devtools:
     restart:
       enabled: true
+  #thymeleaf
   thymeleaf:
     cache: false
+#mybatis配置
 mybatis:
   mapper-locations: classpath:mybatis/mapper/*.xml
   configuration:
@@ -27,6 +33,7 @@ mybatis:
     lazy-loading-enabled: true
     map-underscore-to-camel-case: true
     use-generated-keys: true
+#日志配置，输出打印执行SQL
 logging:
   level:
     com.study.demo.dao: debug

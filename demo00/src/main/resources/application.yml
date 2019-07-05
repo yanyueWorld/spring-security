@@ -1,12 +1,12 @@
 spring:
-  #ÈÈ²¿Êğ
+  #çƒ­éƒ¨ç½²
   devtools:
     restart:
       enabled: true
-  #thymeleaf »º´æ
+  #thymeleaf
   thymeleaf:
     cache: false
-#ÏîÄ¿È«¾ÖÅäÖÃ
+#å…¨å±€é…ç½®
 server:
   port: 80
   servlet:

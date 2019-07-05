@@ -25,11 +25,24 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
     private final AccountService accountService;
 
+    /**
+     * UserDetailsServiceImpl 构造器，初始化accountService.
+     *
+     * @param accountService
+     */
     @Autowired
     UserDetailsServiceImpl(AccountService accountService) {
         this.accountService = accountService;
     }
 
+    /**
+     * 通过用户名加载用户对象.
+     *
+     * @param username 用户名
+     * @return USerDetails 用户对象信息
+     * @throws UsernameNotFoundException 用户名找不到异常
+     * @see org.springframework.security.core.userdetails.UserDetailsService
+     */
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         Account account = accountService.getUserByUsername(username);

@@ -43,7 +43,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 //注销配置
                 .logout().logoutUrl("/logout").logoutSuccessUrl("/login");
     }
-
+     /**
+       * userDetailsService 存储用户信息.
+       * @return UserDetailsService 用户信息
+       */
     @Bean
     @Override
     protected UserDetailsService userDetailsService() {
