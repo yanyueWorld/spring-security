@@ -1,5 +1,5 @@
 #本教程所用技术
-1. springboot 5
+1. springboot 2.1.6
 2. spring-security 5
 3. mysql 5.7
 4. driud
